@@ -4,7 +4,7 @@
 
 - Tên nhóm: **Hà Duy Anh - Phạm Nhật Nam - Vũ Văn Phong**
 - Repository URL: https://github.com/VuVanPhong123/Day13-K3-Observability
-- Commit SHA cuối: **PENDING_FINAL_METADATA_COMMIT**
+- Commit SHA cuối: `243bac1e69d201d1ae91cd0a9937e73aaf3bdf5b` (final content commit trước SHA-only metadata update này; khi nộp Codelabs dùng HEAD mới nhất của `main`).
 - Thành viên theo thứ tự:
   1. Hà Duy Anh
   2. Phạm Nhật Nam
