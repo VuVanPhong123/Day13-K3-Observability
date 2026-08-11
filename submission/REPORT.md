@@ -16,8 +16,8 @@
 
 ## 3. Logging và tracing
 
-- Evidence correlation ID:
-- Evidence PII redaction:
+- Evidence correlation ID: ![correlation id](evidence/log_pii_redaction.png)
+- Evidence PII redaction: ![pii redaction](evidence/log_pii_redaction.png)
 - Evidence trace waterfall:
 - Giải thích một span đáng chú ý:
 
