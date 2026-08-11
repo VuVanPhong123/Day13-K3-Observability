@@ -1,0 +1,107 @@
+{
+  "title": "Day 13 AI Observability",
+  "source": "data\\logs.jsonl",
+  "time_range_minutes": 60,
+  "refresh_seconds": 30,
+  "generated_at": "2026-08-11T03:59:38.376184+00:00",
+  "record_count": 23,
+  "panels": [
+    {
+      "id": "latency",
+      "title": "Latency percentiles",
+      "unit": "ms",
+      "threshold": {
+        "aggregation": "p95",
+        "operator": "lte",
+        "value": 3000
+      },
+      "values": {
+        "p50": 151.0,
+        "p95": 536.0,
+        "p99": 536.0
+      },
+      "status": "ok"
+    },
+    {
+      "id": "traffic",
+      "title": "Request traffic",
+      "unit": "requests_per_minute",
+      "threshold": {
+        "aggregation": "rate_per_minute",
+        "operator": "gte",
+        "value": 1
+      },
+      "values": {
+        "request_count": 11,
+        "requests_per_minute": 11.0,
+        "buckets": {
+          "2026-08-11T03:57:00+00:00": 11
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "id": "errors",
+      "title": "Error rate and breakdown",
+      "unit": "percent",
+      "threshold": {
+        "aggregation": "error_rate_pct",
+        "operator": "lte",
+        "value": 2
+      },
+      "values": {
+        "error_rate_pct": 0.0,
+        "failed_count": 0,
+        "breakdown": {}
+      },
+      "status": "ok"
+    },
+    {
+      "id": "cost",
+      "title": "Cost over time",
+      "unit": "usd",
+      "threshold": {
+        "aggregation": "total",
+        "operator": "lte",
+        "value": 2.5
+      },
+      "values": {
+        "total_usd": 0.018579,
+        "by_minute": {
+          "2026-08-11T03:57:00+00:00": 0.018579
+        }
+      },
+      "status": "ok"
+    },
+    {
+      "id": "tokens",
+      "title": "Input and output tokens",
+      "unit": "tokens",
+      "threshold": {
+        "aggregation": "sum_by_field",
+        "operator": "lte",
+        "value": 50000
+      },
+      "values": {
+        "input_total": 358,
+        "output_total": 1167,
+        "total": 1525
+      },
+      "status": "ok"
+    },
+    {
+      "id": "quality",
+      "title": "Quality proxy",
+      "unit": "score_0_to_1",
+      "threshold": {
+        "aggregation": "mean",
+        "operator": "gte",
+        "value": 0.75
+      },
+      "values": {
+        "mean": 0.8727
+      },
+      "status": "ok"
+    }
+  ]
+}

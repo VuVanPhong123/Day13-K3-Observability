@@ -1,0 +1,5 @@
+Managed prompt: day13-chat
+Promotion: production -> version 2
+Rollback: production -> version 1
+Final production version: 1
+Trace IDs and metadata are recorded in prompt-versions.json.

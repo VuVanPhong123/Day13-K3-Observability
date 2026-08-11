@@ -1,0 +1,949 @@
+{
+  "query": {
+    "name": "agent_execution",
+    "limit": 100
+  },
+  "api_total_items": 33,
+  "logged_trace_id_count": 22,
+  "logged_trace_ids": [
+    "056af6499b4173be5f84e9eb72384e24",
+    "0c7b0d2becf284fb46b59545cabc3679",
+    "15cd0cc00528e28c5737b95bfaec7057",
+    "3cb15ab6c018fba7fff59c5d6597d390",
+    "439987e071c037b11a4982dde580236c",
+    "536a050ed888397e6197eeead11e0b83",
+    "5be089dc1e506f1456a6f8a19d95b8e2",
+    "5d325df01ec87a9204bf68bf6c19568f",
+    "66f89298535b744aa0b471b70eeb6991",
+    "6bb38e58439286544d8960d265f696c8",
+    "77fff024ec7bbf4428c23e0948895f6d",
+    "808124f6c84bb053753a5c34028a7845",
+    "906f8cc35dab0519ff37c8319082ffb6",
+    "98556d7442c093e7c33044914312b49b",
+    "a9ece6003dcd7f3091b4f71b1ed06757",
+    "b33bb06984374bd729509dec3dd05fa2",
+    "b8e565847a1b2563dec41a324f438e07",
+    "d7897429012f9c932b6b4f9e16cc8fae",
+    "e9d9d7317f00a53feb69d32310a1de5a",
+    "ebaa37998a2430a543bf09a63615ebed",
+    "ef1f4b41f868ad9b740464f6d45f65f7",
+    "f02e649715095767ca2090d8a632c755"
+  ],
+  "logged_ids_present_in_api_page": [
+    "056af6499b4173be5f84e9eb72384e24",
+    "0c7b0d2becf284fb46b59545cabc3679",
+    "15cd0cc00528e28c5737b95bfaec7057",
+    "3cb15ab6c018fba7fff59c5d6597d390",
+    "439987e071c037b11a4982dde580236c",
+    "536a050ed888397e6197eeead11e0b83",
+    "5be089dc1e506f1456a6f8a19d95b8e2",
+    "5d325df01ec87a9204bf68bf6c19568f",
+    "66f89298535b744aa0b471b70eeb6991",
+    "6bb38e58439286544d8960d265f696c8",
+    "77fff024ec7bbf4428c23e0948895f6d",
+    "808124f6c84bb053753a5c34028a7845",
+    "906f8cc35dab0519ff37c8319082ffb6",
+    "98556d7442c093e7c33044914312b49b",
+    "a9ece6003dcd7f3091b4f71b1ed06757",
+    "b33bb06984374bd729509dec3dd05fa2",
+    "b8e565847a1b2563dec41a324f438e07",
+    "d7897429012f9c932b6b4f9e16cc8fae",
+    "e9d9d7317f00a53feb69d32310a1de5a",
+    "ebaa37998a2430a543bf09a63615ebed",
+    "ef1f4b41f868ad9b740464f6d45f65f7",
+    "f02e649715095767ca2090d8a632c755"
+  ],
+  "traces": [
+    {
+      "trace_id": "98556d7442c093e7c33044914312b49b",
+      "timestamp": "2026-08-11 04:08:07.763000+00:00",
+      "name": "agent_execution",
+      "session_id": "final-smoke-session",
+      "user_id": "6e45ab5f8c32",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "6e45ab5f8c32",
+        "session_id": "final-smoke-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-c0ffee12"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/98556d7442c093e7c33044914312b49b"
+    },
+    {
+      "trace_id": "d7897429012f9c932b6b4f9e16cc8fae",
+      "timestamp": "2026-08-11 04:04:10.098000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s05",
+      "user_id": "5da42a0d3d01",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "5da42a0d3d01",
+        "session_id": "k3-challenge-s05",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-9e21f1eb"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/d7897429012f9c932b6b4f9e16cc8fae"
+    },
+    {
+      "trace_id": "66f89298535b744aa0b471b70eeb6991",
+      "timestamp": "2026-08-11 04:04:07.441000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s01",
+      "user_id": "026c7a407135",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "026c7a407135",
+        "session_id": "k3-challenge-s01",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-7016b38e"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/66f89298535b744aa0b471b70eeb6991"
+    },
+    {
+      "trace_id": "808124f6c84bb053753a5c34028a7845",
+      "timestamp": "2026-08-11 04:04:04.780000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s02",
+      "user_id": "867738e76862",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "867738e76862",
+        "session_id": "k3-challenge-s02",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-6c213bf0"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/808124f6c84bb053753a5c34028a7845"
+    },
+    {
+      "trace_id": "906f8cc35dab0519ff37c8319082ffb6",
+      "timestamp": "2026-08-11 04:04:02.123000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s04",
+      "user_id": "026017618b2c",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "026017618b2c",
+        "session_id": "k3-challenge-s04",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-4d71c76e"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/906f8cc35dab0519ff37c8319082ffb6"
+    },
+    {
+      "trace_id": "6bb38e58439286544d8960d265f696c8",
+      "timestamp": "2026-08-11 04:03:59.022000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s03",
+      "user_id": "b7fde6ae11b0",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "b7fde6ae11b0",
+        "session_id": "k3-challenge-s03",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-31aabd39"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/6bb38e58439286544d8960d265f696c8"
+    },
+    {
+      "trace_id": "5d42cdab83fd0903288c6e5df0e59ce6",
+      "timestamp": "2026-08-11 04:02:34.582000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030004"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/5d42cdab83fd0903288c6e5df0e59ce6"
+    },
+    {
+      "trace_id": "7a04e55abcd72768f5ebb4584ff3d69a",
+      "timestamp": "2026-08-11 04:02:17.774000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 2,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030003"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/7a04e55abcd72768f5ebb4584ff3d69a"
+    },
+    {
+      "trace_id": "864af8594697818fa6ab45c67deaeb77",
+      "timestamp": "2026-08-11 04:02:01.077000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "candidate",
+        "prompt_version": 2,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030002"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/864af8594697818fa6ab45c67deaeb77"
+    },
+    {
+      "trace_id": "a351bcb24406b163f8fdce683121d46a",
+      "timestamp": "2026-08-11 04:01:54.670000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "baseline",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030001"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/a351bcb24406b163f8fdce683121d46a"
+    },
+    {
+      "trace_id": "056af6499b4173be5f84e9eb72384e24",
+      "timestamp": "2026-08-11 04:00:27.456000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s02",
+      "user_id": "867738e76862",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "867738e76862",
+        "session_id": "k3-challenge-s02",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-91127967"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/056af6499b4173be5f84e9eb72384e24"
+    },
+    {
+      "trace_id": "3cb15ab6c018fba7fff59c5d6597d390",
+      "timestamp": "2026-08-11 04:00:24.796000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s01",
+      "user_id": "026c7a407135",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "026c7a407135",
+        "session_id": "k3-challenge-s01",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-4dc37753"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/3cb15ab6c018fba7fff59c5d6597d390"
+    },
+    {
+      "trace_id": "0c7b0d2becf284fb46b59545cabc3679",
+      "timestamp": "2026-08-11 04:00:22.143000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s05",
+      "user_id": "5da42a0d3d01",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "5da42a0d3d01",
+        "session_id": "k3-challenge-s05",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-3e583a48"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/0c7b0d2becf284fb46b59545cabc3679"
+    },
+    {
+      "trace_id": "e9d9d7317f00a53feb69d32310a1de5a",
+      "timestamp": "2026-08-11 04:00:19.486000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s03",
+      "user_id": "b7fde6ae11b0",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "b7fde6ae11b0",
+        "session_id": "k3-challenge-s03",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-688d61ff"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/e9d9d7317f00a53feb69d32310a1de5a"
+    },
+    {
+      "trace_id": "536a050ed888397e6197eeead11e0b83",
+      "timestamp": "2026-08-11 04:00:16.828000+00:00",
+      "name": "agent_execution",
+      "session_id": "k3-challenge-s04",
+      "user_id": "026017618b2c",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "026017618b2c",
+        "session_id": "k3-challenge-s04",
+        "feature": "refund",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-7de9813d"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "refund"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/536a050ed888397e6197eeead11e0b83"
+    },
+    {
+      "trace_id": "a9ece6003dcd7f3091b4f71b1ed06757",
+      "timestamp": "2026-08-11 03:57:39.932000+00:00",
+      "name": "agent_execution",
+      "session_id": "s10",
+      "user_id": "105a9cef3903",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "105a9cef3903",
+        "session_id": "s10",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-8ab299f3"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/a9ece6003dcd7f3091b4f71b1ed06757"
+    },
+    {
+      "trace_id": "5d325df01ec87a9204bf68bf6c19568f",
+      "timestamp": "2026-08-11 03:57:39.777000+00:00",
+      "name": "agent_execution",
+      "session_id": "s09",
+      "user_id": "4d14d5d4f719",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "4d14d5d4f719",
+        "session_id": "s09",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-eb020acc"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/5d325df01ec87a9204bf68bf6c19568f"
+    },
+    {
+      "trace_id": "ef1f4b41f868ad9b740464f6d45f65f7",
+      "timestamp": "2026-08-11 03:57:39.619000+00:00",
+      "name": "agent_execution",
+      "session_id": "s08",
+      "user_id": "2f015d970c0b",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "2f015d970c0b",
+        "session_id": "s08",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-08c6ef83"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/ef1f4b41f868ad9b740464f6d45f65f7"
+    },
+    {
+      "trace_id": "439987e071c037b11a4982dde580236c",
+      "timestamp": "2026-08-11 03:57:39.463000+00:00",
+      "name": "agent_execution",
+      "session_id": "s07",
+      "user_id": "1632c29ecdec",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "1632c29ecdec",
+        "session_id": "s07",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-8815078e"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/439987e071c037b11a4982dde580236c"
+    },
+    {
+      "trace_id": "15cd0cc00528e28c5737b95bfaec7057",
+      "timestamp": "2026-08-11 03:57:39.306000+00:00",
+      "name": "agent_execution",
+      "session_id": "s06",
+      "user_id": "4c4f62330d76",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "4c4f62330d76",
+        "session_id": "s06",
+        "feature": "summary",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-af2daf58"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "summary"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/15cd0cc00528e28c5737b95bfaec7057"
+    },
+    {
+      "trace_id": "b33bb06984374bd729509dec3dd05fa2",
+      "timestamp": "2026-08-11 03:57:39.149000+00:00",
+      "name": "agent_execution",
+      "session_id": "s03",
+      "user_id": "97ce842ec69d",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "97ce842ec69d",
+        "session_id": "s03",
+        "feature": "summary",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-41c28041"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "summary"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/b33bb06984374bd729509dec3dd05fa2"
+    },
+    {
+      "trace_id": "5be089dc1e506f1456a6f8a19d95b8e2",
+      "timestamp": "2026-08-11 03:57:38.992000+00:00",
+      "name": "agent_execution",
+      "session_id": "s04",
+      "user_id": "75af07890985",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "75af07890985",
+        "session_id": "s04",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-e6c446da"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/5be089dc1e506f1456a6f8a19d95b8e2"
+    },
+    {
+      "trace_id": "f02e649715095767ca2090d8a632c755",
+      "timestamp": "2026-08-11 03:57:38.835000+00:00",
+      "name": "agent_execution",
+      "session_id": "s01",
+      "user_id": "2055254ee30a",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "2055254ee30a",
+        "session_id": "s01",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-d3560078"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/f02e649715095767ca2090d8a632c755"
+    },
+    {
+      "trace_id": "77fff024ec7bbf4428c23e0948895f6d",
+      "timestamp": "2026-08-11 03:57:38.679000+00:00",
+      "name": "agent_execution",
+      "session_id": "s05",
+      "user_id": "64f6ec689229",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "64f6ec689229",
+        "session_id": "s05",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-bc0351c3"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/77fff024ec7bbf4428c23e0948895f6d"
+    },
+    {
+      "trace_id": "b8e565847a1b2563dec41a324f438e07",
+      "timestamp": "2026-08-11 03:57:38.521000+00:00",
+      "name": "agent_execution",
+      "session_id": "s02",
+      "user_id": "95b6504a8bd6",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "95b6504a8bd6",
+        "session_id": "s02",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-642c4095"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/b8e565847a1b2563dec41a324f438e07"
+    },
+    {
+      "trace_id": "ebaa37998a2430a543bf09a63615ebed",
+      "timestamp": "2026-08-11 03:57:31.242000+00:00",
+      "name": "agent_execution",
+      "session_id": "smoke-session",
+      "user_id": "9bbf17488ebf",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "9bbf17488ebf",
+        "session_id": "smoke-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-deadbeef"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/ebaa37998a2430a543bf09a63615ebed"
+    },
+    {
+      "trace_id": "79674a706629fcf44dfea1eb1a3c0b97",
+      "timestamp": "2026-08-11 03:56:56.311000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030004"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/79674a706629fcf44dfea1eb1a3c0b97"
+    },
+    {
+      "trace_id": "39eba0baaad09f59570056dc7d4bc03a",
+      "timestamp": "2026-08-11 03:56:39.516000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 2,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030003"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/39eba0baaad09f59570056dc7d4bc03a"
+    },
+    {
+      "trace_id": "b9df59699577374873eceb8db6163bdf",
+      "timestamp": "2026-08-11 03:56:22.770000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "candidate",
+        "prompt_version": 2,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030002"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/b9df59699577374873eceb8db6163bdf"
+    },
+    {
+      "trace_id": "41e8236272862322d9181efe168645d9",
+      "timestamp": "2026-08-11 03:56:05.935000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "baseline",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030001"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/41e8236272862322d9181efe168645d9"
+    },
+    {
+      "trace_id": "ceac0988508c06120d19ae32e4d9eba7",
+      "timestamp": "2026-08-11 03:55:01.626000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "production",
+        "prompt_version": 2,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030003"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/ceac0988508c06120d19ae32e4d9eba7"
+    },
+    {
+      "trace_id": "3cea014cbb4b0f37be1026ec181b04e3",
+      "timestamp": "2026-08-11 03:54:51.016000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "candidate",
+        "prompt_version": 2,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030002"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/3cea014cbb4b0f37be1026ec181b04e3"
+    },
+    {
+      "trace_id": "b447f87c0317a52f5d2f64f7d0a6b3a2",
+      "timestamp": "2026-08-11 03:54:44.936000+00:00",
+      "name": "agent_execution",
+      "session_id": "prompt-flow-session",
+      "user_id": "ec6df75242e4",
+      "latency_seconds": -1.0,
+      "total_cost_usd": -1.0,
+      "metadata": {
+        "prompt_name": "day13-chat",
+        "prompt_label": "baseline",
+        "prompt_version": 1,
+        "prompt_source": "langfuse",
+        "user_id_hash": "ec6df75242e4",
+        "session_id": "prompt-flow-session",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5",
+        "env": "dev",
+        "correlation_id": "req-13030001"
+      },
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "html_path": "/project/cmso3c3c5006xad0ief8rnpky/traces/b447f87c0317a52f5d2f64f7d0a6b3a2"
+    }
+  ]
+}

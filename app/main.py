@@ -28,6 +28,7 @@ async def startup() -> None:
         "app_started",
         service=os.getenv("APP_NAME", "day13-observability-lab"),
         env=os.getenv("APP_ENV", "dev"),
+        correlation_id="system-startup",
         payload={"tracing_enabled": tracing_enabled()},
     )
 
@@ -44,9 +45,17 @@ async def metrics() -> dict:
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(request: Request, body: ChatRequest) -> ChatResponse:
-    # TODO: Enrich logs with request context (user_id_hash, session_id, feature, model, env)
-    # bind_contextvars(...)
-    
+    model = agent.model
+    env = os.getenv("APP_ENV", "dev")
+    bind_contextvars(
+        correlation_id=request.state.correlation_id,
+        user_id_hash=hash_user_id(body.user_id),
+        session_id=body.session_id,
+        feature=body.feature,
+        model=model,
+        env=env,
+    )
+
     log.info(
         "request_received",
         service="api",
@@ -58,6 +67,7 @@ async def chat(request: Request, body: ChatRequest) -> ChatResponse:
             feature=body.feature,
             session_id=body.session_id,
             message=body.message,
+            correlation_id=request.state.correlation_id,
         )
         log.info(
             "response_sent",
@@ -67,6 +77,7 @@ async def chat(request: Request, body: ChatRequest) -> ChatResponse:
             tokens_out=result.tokens_out,
             cost_usd=result.cost_usd,
             quality_score=result.quality_score,
+            trace_id=result.trace_id,
             payload={"answer_preview": summarize_text(result.answer)},
         )
         return ChatResponse(
@@ -85,7 +96,10 @@ async def chat(request: Request, body: ChatRequest) -> ChatResponse:
             "request_failed",
             service="api",
             error_type=error_type,
-            payload={"detail": str(exc), "message_preview": summarize_text(body.message)},
+            payload={
+                "detail": summarize_text(str(exc)),
+                "message_preview": summarize_text(body.message),
+            },
         )
         raise HTTPException(status_code=500, detail=error_type) from exc
 

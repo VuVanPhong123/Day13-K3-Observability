@@ -1,0 +1,253 @@
+{
+  "prompt_name": "day13-chat",
+  "versions": {
+    "baseline": 1,
+    "candidate": 2
+  },
+  "templates": {
+    "baseline": "Feature={{feature}}\nDocs={{docs}}\nQuestion={{message}}",
+    "candidate": "Feature={{feature}}\nDocs={{docs}}\nQuestion={{message}}\nAnswer concisely in a few sentences."
+  },
+  "runs": [
+    {
+      "label": "baseline",
+      "expected_version": 1,
+      "trace_id": "a351bcb24406b163f8fdce683121d46a",
+      "trace": {
+        "trace_id": "a351bcb24406b163f8fdce683121d46a",
+        "name": "agent_execution",
+        "session_id": "prompt-flow-session",
+        "user_id": "ec6df75242e4",
+        "metadata": {
+          "prompt_name": "day13-chat",
+          "prompt_label": "baseline",
+          "prompt_version": 1,
+          "prompt_source": "langfuse",
+          "user_id_hash": "ec6df75242e4",
+          "session_id": "prompt-flow-session",
+          "feature": "qa",
+          "model": "claude-sonnet-4-5",
+          "env": "dev",
+          "correlation_id": "req-13030001"
+        },
+        "observations": []
+      }
+    },
+    {
+      "label": "candidate",
+      "expected_version": 2,
+      "trace_id": "864af8594697818fa6ab45c67deaeb77",
+      "trace": {
+        "trace_id": "864af8594697818fa6ab45c67deaeb77",
+        "name": "agent_execution",
+        "session_id": "prompt-flow-session",
+        "user_id": "ec6df75242e4",
+        "metadata": {
+          "prompt_name": "day13-chat",
+          "prompt_label": "candidate",
+          "prompt_version": 2,
+          "prompt_source": "langfuse",
+          "user_id_hash": "ec6df75242e4",
+          "session_id": "prompt-flow-session",
+          "feature": "qa",
+          "model": "claude-sonnet-4-5",
+          "env": "dev",
+          "correlation_id": "req-13030002"
+        },
+        "observations": [
+          {
+            "id": "7a1b3ffdce625072",
+            "name": "llm_generation",
+            "type": "GENERATION",
+            "latency_seconds": 0.151,
+            "parent_observation_id": "36504c162824cb7c",
+            "prompt_name": "day13-chat",
+            "prompt_version": 2,
+            "metadata": {
+              "prompt_name": "day13-chat",
+              "prompt_label": "candidate",
+              "prompt_version": 2,
+              "prompt_source": "langfuse",
+              "user_id_hash": "ec6df75242e4",
+              "session_id": "prompt-flow-session",
+              "feature": "qa",
+              "model": "claude-sonnet-4-5",
+              "env": "dev",
+              "correlation_id": "req-13030002",
+              "doc_count": 1
+            }
+          },
+          {
+            "id": "1407e9e9f6acd6ef",
+            "name": "prompt_resolution",
+            "type": "SPAN",
+            "latency_seconds": 0.12,
+            "parent_observation_id": "36504c162824cb7c",
+            "prompt_name": null,
+            "prompt_version": null,
+            "metadata": {
+              "feature": "qa",
+              "correlation_id": "req-13030002"
+            }
+          },
+          {
+            "id": "36504c162824cb7c",
+            "name": "agent_execution",
+            "type": "SPAN",
+            "latency_seconds": 0.271,
+            "parent_observation_id": null,
+            "prompt_name": null,
+            "prompt_version": null,
+            "metadata": {}
+          },
+          {
+            "id": "d586b9ceac1f9232",
+            "name": "retrieval",
+            "type": "SPAN",
+            "latency_seconds": 0.0,
+            "parent_observation_id": "36504c162824cb7c",
+            "prompt_name": null,
+            "prompt_version": null,
+            "metadata": {
+              "feature": "qa",
+              "session_id": "prompt-flow-session",
+              "correlation_id": "req-13030002"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "production",
+      "expected_version": 2,
+      "trace_id": "7a04e55abcd72768f5ebb4584ff3d69a",
+      "trace": {
+        "trace_id": "7a04e55abcd72768f5ebb4584ff3d69a",
+        "name": "agent_execution",
+        "session_id": "prompt-flow-session",
+        "user_id": "ec6df75242e4",
+        "metadata": {
+          "prompt_name": "day13-chat",
+          "prompt_label": "production",
+          "prompt_version": 2,
+          "prompt_source": "langfuse",
+          "user_id_hash": "ec6df75242e4",
+          "session_id": "prompt-flow-session",
+          "feature": "qa",
+          "model": "claude-sonnet-4-5",
+          "env": "dev",
+          "correlation_id": "req-13030003"
+        },
+        "observations": [
+          {
+            "id": "efe1af9698abb805",
+            "name": "llm_generation",
+            "type": "GENERATION",
+            "latency_seconds": 0.153,
+            "parent_observation_id": "f54a947b87db2ed2",
+            "prompt_name": "day13-chat",
+            "prompt_version": 2,
+            "metadata": {
+              "prompt_name": "day13-chat",
+              "prompt_label": "production",
+              "prompt_version": 2,
+              "prompt_source": "langfuse",
+              "user_id_hash": "ec6df75242e4",
+              "session_id": "prompt-flow-session",
+              "feature": "qa",
+              "model": "claude-sonnet-4-5",
+              "env": "dev",
+              "correlation_id": "req-13030003",
+              "doc_count": 1
+            }
+          },
+          {
+            "id": "b7336c58f825f6d1",
+            "name": "prompt_resolution",
+            "type": "SPAN",
+            "latency_seconds": 0.114,
+            "parent_observation_id": "f54a947b87db2ed2",
+            "prompt_name": null,
+            "prompt_version": null,
+            "metadata": {
+              "feature": "qa",
+              "correlation_id": "req-13030003"
+            }
+          },
+          {
+            "id": "f54a947b87db2ed2",
+            "name": "agent_execution",
+            "type": "SPAN",
+            "latency_seconds": 0.268,
+            "parent_observation_id": null,
+            "prompt_name": null,
+            "prompt_version": null,
+            "metadata": {}
+          },
+          {
+            "id": "faddfe109089fab5",
+            "name": "retrieval",
+            "type": "SPAN",
+            "latency_seconds": 0.0,
+            "parent_observation_id": "f54a947b87db2ed2",
+            "prompt_name": null,
+            "prompt_version": null,
+            "metadata": {
+              "feature": "qa",
+              "session_id": "prompt-flow-session",
+              "correlation_id": "req-13030003"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "production",
+      "expected_version": 1,
+      "trace_id": "5d42cdab83fd0903288c6e5df0e59ce6",
+      "trace": {
+        "trace_id": "5d42cdab83fd0903288c6e5df0e59ce6",
+        "name": "agent_execution",
+        "session_id": "prompt-flow-session",
+        "user_id": "ec6df75242e4",
+        "metadata": {
+          "prompt_name": "day13-chat",
+          "prompt_label": "production",
+          "prompt_version": 1,
+          "prompt_source": "langfuse",
+          "user_id_hash": "ec6df75242e4",
+          "session_id": "prompt-flow-session",
+          "feature": "qa",
+          "model": "claude-sonnet-4-5",
+          "env": "dev",
+          "correlation_id": "req-13030004"
+        },
+        "observations": []
+      }
+    }
+  ],
+  "promotion": {
+    "production_version": 2,
+    "labels": {
+      "baseline": [
+        "baseline"
+      ],
+      "candidate": [
+        "candidate",
+        "production"
+      ]
+    }
+  },
+  "rollback": {
+    "production_version": 1,
+    "labels": {
+      "baseline": [
+        "baseline",
+        "production"
+      ],
+      "candidate": [
+        "candidate"
+      ]
+    }
+  }
+}

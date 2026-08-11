@@ -1,0 +1,29 @@
+{
+  "challenge_id": "day13-k3-observability-v1",
+  "cohort": "K3",
+  "affected_feature": "refund",
+  "official_latency_threshold_ms": 2000,
+  "selection": "latest response_sent records for the released official query count",
+  "sample_size": 5,
+  "latency_ms": {
+    "p50": 2653.0,
+    "p95": 3089.0,
+    "p99": 3089.0,
+    "min": 2653,
+    "max": 3089
+  },
+  "correlation_ids": [
+    "req-31aabd39",
+    "req-4d71c76e",
+    "req-6c213bf0",
+    "req-7016b38e",
+    "req-9e21f1eb"
+  ],
+  "trace_ids": [
+    "6bb38e58439286544d8960d265f696c8",
+    "906f8cc35dab0519ff37c8319082ffb6",
+    "808124f6c84bb053753a5c34028a7845",
+    "66f89298535b744aa0b471b70eeb6991",
+    "d7897429012f9c932b6b4f9e16cc8fae"
+  ]
+}

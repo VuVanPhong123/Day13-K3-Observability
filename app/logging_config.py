@@ -3,35 +3,34 @@ from __future__ import annotations
 import logging
 import os
 from pathlib import Path
+from threading import Lock
 from typing import Any
 
 import structlog
 from structlog.contextvars import merge_contextvars
 
-from .pii import scrub_text
+from .pii import scrub_value
 
 LOG_PATH = Path(os.getenv("LOG_PATH", "data/logs.jsonl"))
+_LOG_LOCK = Lock()
 
 
 class JsonlFileProcessor:
     def __call__(self, logger: Any, method_name: str, event_dict: dict[str, Any]) -> dict[str, Any]:
         LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
         rendered = structlog.processors.JSONRenderer()(logger, method_name, event_dict)
-        with LOG_PATH.open("a", encoding="utf-8") as f:
-            f.write(rendered + "\n")
+        with _LOG_LOCK:
+            with LOG_PATH.open("a", encoding="utf-8") as f:
+                f.write(rendered + "\n")
         return event_dict
 
 
 
 def scrub_event(_: Any, __: str, event_dict: dict[str, Any]) -> dict[str, Any]:
-    payload = event_dict.get("payload")
-    if isinstance(payload, dict):
-        event_dict["payload"] = {
-            k: scrub_text(v) if isinstance(v, str) else v for k, v in payload.items()
-        }
-    if "event" in event_dict and isinstance(event_dict["event"], str):
-        event_dict["event"] = scrub_text(event_dict["event"])
-    return event_dict
+    # This processor deliberately runs after exception formatting and before
+    # JsonlFileProcessor/JSONRenderer, so nested messages and tracebacks are
+    # scrubbed before anything is persisted.
+    return {key: scrub_value(value) for key, value in event_dict.items()}
 
 
 
@@ -42,10 +41,9 @@ def configure_logging() -> None:
             merge_contextvars,
             structlog.processors.add_log_level,
             structlog.processors.TimeStamper(fmt="iso", utc=True, key="ts"),
-            # TODO: Register your PII scrubbing processor here
-            # scrub_event,
             structlog.processors.StackInfoRenderer(),
             structlog.processors.format_exc_info,
+            scrub_event,
             JsonlFileProcessor(),
             structlog.processors.JSONRenderer(),
         ],
