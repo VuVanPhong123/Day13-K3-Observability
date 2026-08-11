@@ -9,10 +9,10 @@
 
 ## 2. Kết quả kỹ thuật
 
-- Điểm `validate_logs.py`:
-- Tổng số traces:
-- Số PII leak còn lại:
-- Link/đường dẫn dashboard:
+- Điểm `validate_logs.py`: 30/100
+- Tổng số traces: 32 
+- Số PII leak còn lại: 0 
+- Link/đường dẫn dashboard: Chưa có
 
 ## 3. Logging và tracing
 
