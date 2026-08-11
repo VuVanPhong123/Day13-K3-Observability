@@ -1,3 +1,8 @@
+| Thành viên | Phần việc | Commit/PR | Điều đã học |
+|---|---|---|---|
+| Hà Duy Anh | Logging & PII: correlation ID, structured logging, metadata và PII redaction | N/A - final shared lab commit | Structured logging; correlation ID; PII scrubbing trước khi persist log. |
+| Phạm Nhật Nam | Tracing & Prompt Version: Langfuse traces, prompt v1/v2, labels và production promotion/rollback | N/A - final shared lab commit | Tracing/span; prompt versioning; liên kết trace với managed prompt. |
+| Vũ Văn Phong | Dashboard, SLO, alerts, challenge investigation và report/evidence integration | N/A - final shared lab commit | Percentile/SLO; Metrics → Traces → Logs; root-cause investigation. |
 # Day 13 — Observability cho hệ thống AI
 
 Trong lab 4 giờ này, bạn sẽ biến một API AI chạy được nhưng khó quan sát thành một hệ thống có thể theo dõi, phát hiện sự cố và giải thích nguyên nhân bằng bằng chứng.
