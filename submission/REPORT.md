@@ -1,8 +1,10 @@
 # Báo cáo Day 13 — Observability
 
 ## 1. Thông tin nhóm
-- Repository URL: https://github.com/VinUni-AI20k/Day13-K3-Observability
-- Commit SHA cuối: `0b09edb2f939f95fe17dcdcdc22b91736ee6df96` (implementation commit trước metadata-only finalization).
+
+- Tên nhóm: **Hà Duy Anh - Phạm Nhật Nam - Vũ Văn Phong**
+- Repository URL: https://github.com/VuVanPhong123/Day13-K3-Observability
+- Commit SHA cuối: **PENDING_FINAL_METADATA_COMMIT**
 - Thành viên theo thứ tự:
   1. Hà Duy Anh
   2. Phạm Nhật Nam
@@ -55,10 +57,17 @@
 
 ## 7. Đóng góp cá nhân
 
-Các đóng góp được mô tả theo vai trò lab trên worktree dùng chung; Git history không chứng minh commit/PR riêng cho từng thành viên.
+Các dòng dưới đây dùng bằng chứng Git có thể kiểm tra được; phần final integration trên `main` có thể supersede một số thay đổi draft ở branch thành viên nhưng vẫn giữ lịch sử đóng góp.
 
-| Thành viên | Phần việc | Commit/PR | Điều đã học |
+| Thành viên | Phần việc | Commit/PR kiểm chứng | Điều đã học |
 |---|---|---|---|
-| Hà Duy Anh | Logging & PII: correlation ID, structured logging, metadata và PII redaction | N/A - final shared lab commit | Structured logging; correlation ID; PII scrubbing trước khi persist log. |
-| Phạm Nhật Nam | Tracing & Prompt Version: Langfuse traces, prompt v1/v2, labels và production promotion/rollback | N/A - final shared lab commit | Tracing/span; prompt versioning; liên kết trace với managed prompt. |
-| Vũ Văn Phong | Dashboard, SLO, alerts, challenge investigation và report/evidence integration | N/A - final shared lab commit | Percentile/SLO; Metrics → Traces → Logs; root-cause investigation. |
+| Hà Duy Anh | Logging & PII / CP1: correlation ID, structured logging, metadata, PII redaction và evidence ban đầu | [`98114cf`](https://github.com/VuVanPhong123/Day13-K3-Observability/commit/98114cf2eda31596c25dbe986950c53c44c75ca7), [PR #1](https://github.com/VuVanPhong123/Day13-K3-Observability/pull/1) | Structured logging; correlation ID; PII scrubbing trước khi persist log. |
+| Phạm Nhật Nam | Dashboard, SLO & Alert / CP2: alert rules, SLO, runbook và dashboard spec; final values được hợp nhất/chỉnh lại trong bước integration | [`0de2b52`](https://github.com/VuVanPhong123/Day13-K3-Observability/commit/0de2b52ad85595d709a1fa27a69008b4bb77b54a) trên branch `nam` | Percentile/SLO; symptom-based alerts; runbook và dashboard contract. |
+| Vũ Văn Phong | Tracing & Prompt Version, challenge investigation, dashboard runtime và final integration/report/evidence | [`1ba2980`](https://github.com/VuVanPhong123/Day13-K3-Observability/commit/1ba2980798c723b2bf03b4d0abb010d03ee553e9) và các commit finalization trên `main` | Tracing/span; prompt versioning; Metrics → Traces → Logs; root-cause investigation và evidence integration. |
+
+## 8. Kiểm tra cuối
+
+- `python -m pytest -q`: **24 passed, 2 warnings** — xem [`evidence/pytest.txt`](evidence/pytest.txt). Hai warning là FastAPI `on_event` deprecation, không phải test failure.
+- `python scripts/validate_logs.py`: **100/100** — xem [`evidence/validate-logs.txt`](evidence/validate-logs.txt).
+- `python scripts/validate_dashboard.py`: **HỢP LỆ: 6/6 panel** — xem [`evidence/validate-dashboard.txt`](evidence/validate-dashboard.txt).
+- `config/challenge.json` giữ nguyên challenge chính thức; không tự tạo hoặc sửa challenge để vượt bài.
