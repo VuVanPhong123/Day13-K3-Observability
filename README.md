@@ -3,7 +3,7 @@
 ## Nhóm thực hiện
 
 1. Hà Duy Anh — Logging & PII
-2. Phạm Nhật Nam — Dashboard, SLO & Alert
+2. Đoàn Nhật Nam — Dashboard, SLO & Alert
 3. Vũ Văn Phong — Tracing, Prompt Version, Challenge & final integration
 
 Chi tiết đóng góp và evidence nằm trong [`submission/REPORT.md`](submission/REPORT.md).
