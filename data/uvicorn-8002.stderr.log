@@ -1,0 +1,7 @@
+INFO:     Loading environment from '.env'
+INFO:     Started server process [9672]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8002 (Press CTRL+C to quit)
+Error while fetching prompt 'day13-chat-label:production': The read operation timed out
+Returning fallback prompt for 'day13-chat-label:production' due to fetch error: The read operation timed out

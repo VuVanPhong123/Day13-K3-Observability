@@ -1,0 +1,7 @@
+Command: python scripts/validate_dashboard.py
+Result: HỢP LỆ: 6/6 panel có trong dashboard contract.
+
+Dashboard specification: docs/dashboard-spec.md
+Default time range: 60 minutes
+Refresh interval: 30 seconds
+Panels: latency, traffic, errors, cost, tokens, quality

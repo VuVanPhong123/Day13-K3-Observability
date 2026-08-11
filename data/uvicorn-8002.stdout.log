@@ -1,0 +1,8 @@
+{"service": "day13-observability-lab", "env": "dev", "payload": {"tracing_enabled": true}, "event": "app_started", "level": "info", "ts": "2026-08-11T05:16:21.944828Z"}
+INFO:     127.0.0.1:49690 - "GET /health HTTP/1.1" 200 OK
+{"service": "api", "payload": {"message_preview": "How should alerts be designed?"}, "event": "request_received", "level": "info", "ts": "2026-08-11T05:16:28.122813Z"}
+{"service": "api", "latency_ms": 3313, "tokens_in": 28, "tokens_out": 136, "cost_usd": 0.002124, "quality_score": 0.9, "payload": {"answer_preview": "Starter answer. Teams should improve this output logic and add better quality ch..."}, "event": "response_sent", "level": "info", "ts": "2026-08-11T05:16:33.062307Z"}
+INFO:     127.0.0.1:49690 - "POST /chat HTTP/1.1" 200 OK
+{"service": "api", "payload": {"message_preview": "How should alerts be designed?"}, "event": "request_received", "level": "info", "ts": "2026-08-11T05:17:07.524794Z"}
+{"service": "api", "latency_ms": 1514, "tokens_in": 37, "tokens_out": 162, "cost_usd": 0.002541, "quality_score": 0.9, "payload": {"answer_preview": "Starter answer. Teams should improve this output logic and add better quality ch..."}, "event": "response_sent", "level": "info", "ts": "2026-08-11T05:17:09.043224Z"}
+INFO:     127.0.0.1:55365 - "POST /chat HTTP/1.1" 200 OK
