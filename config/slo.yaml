@@ -4,13 +4,16 @@ slis:
   latency_p95_ms:
     objective: 3000
     target: 99.5
-    note: Replace with your group's target
+    note: P95 dưới 3 giây phù hợp với trải nghiệm tương tác của API lab.
   error_rate_pct:
     objective: 2
     target: 99.0
+    note: Giữ tỷ lệ lỗi dưới 2% để phần lớn request hoàn tất ổn định.
   daily_cost_usd:
     objective: 2.5
     target: 100.0
+    note: Ngân sách 2.5 USD mỗi ngày phù hợp với lưu lượng thử nghiệm của nhóm.
   quality_score_avg:
     objective: 0.75
     target: 95.0
+    note: Điểm quality trung bình tối thiểu 0.75 cho quality proxy của lab.
